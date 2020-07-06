@@ -1,6 +1,6 @@
 # Quiz
 
-Test your general knowledge (30 questions)
+Multiple choice quiz to test your general knowledge (30 questions)
 
 Screenshots desktop (1080 x 1920)<br> 
 
