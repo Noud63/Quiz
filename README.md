@@ -4,7 +4,7 @@ Multiple choice quiz to test your general knowledge (30 questions)
 
 Screenshots desktop (1080 x 1920)<br> 
 
-![quiz4](https://user-images.githubusercontent.com/38325801/86583689-fcbbab80-bf83-11ea-8840-80795550fba9.png, alt="noud van dun")
+![quiz4](https://user-images.githubusercontent.com/38325801/86583689-fcbbab80-bf83-11ea-8840-80795550fba9.png, noud van dun)
 
 ![quiz](https://user-images.githubusercontent.com/38325801/86583809-25dc3c00-bf84-11ea-92ae-e9033fb5ae40.png)
 
