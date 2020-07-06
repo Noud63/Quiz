@@ -164,7 +164,7 @@ function start() {
 
 
 function highScore() {
-    if(score1 >= '1' && score2 >= '2'){
+    if(score1 >= '15' && score2 >= '20'){
         clearAnswers()
         document.querySelector('.wrong').style.display = 'none';
         document.querySelector('.correct').style.display = 'none';
