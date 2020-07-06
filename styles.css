@@ -178,13 +178,6 @@ body {
     opacity: 1;
 }
 
-.button1:hover {
-    background: #740000;
-    animation: alertPulse 2s ease-out;
-    animation-iteration-count: infinite;
-    opacity: 1;
-}
-
 .button2 {
     margin-top: 10px;
     border-style: none;
