@@ -1,0 +1,532 @@
+* {
+    box-sizing: border-box;
+    font: 62.5%
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(images/itl.cat_neuroscience-wallpaper_1688899.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    padding: 0px 20px 0px;
+}
+
+.header {
+    /*font-size: 0;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    font-size: 6.8rem;
+    color: rgb(188, 230, 255);
+    text-shadow: 0px 4px 4px rgb(0, 0, 0);
+    border-bottom: 1px solid rgb(224, 244, 255);
+    padding: 15px;
+}
+
+.QU, .IZ {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 320px;
+}
+
+.Q {
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid rgb(188, 230, 255);
+    border-bottom: 1px solid rgb(188, 230, 255);
+    padding: 5px;
+}
+
+.U {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    border-bottom: 1px solid rgb(188, 230, 255);
+    padding: 5px;
+}
+
+.I {
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid rgb(188, 230, 255);
+    padding: 5px;
+}
+
+.Z {
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.question {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    color: rgb(102, 0, 0);
+    font-size: 1.8rem;
+    color: rgb(204, 236, 255);
+    text-shadow: 0px 2px 1px rgb(0, 0, 0);
+}
+
+.answers {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    height: 100px;
+}
+
+
+@media only screen and (max-width: 575px) {
+    .answers {
+        margin-bottom: 0px;
+    }
+  }
+
+.name {
+    margin-top: 10px;
+    cursor: pointer;
+    color: rgb(102, 0, 0);
+    font-size: 1.4rem;
+    color: rgb(204, 236, 255);
+    text-shadow: 0px 2px 1px rgb(0, 0, 0);
+}
+
+@media only screen and (max-width: 620px) {
+    .question{
+        font-size: 1.4rem;
+    }
+  }
+
+@media only screen and (max-width: 575px) {
+    .name{
+        font-size: 1.2rem;
+    }
+  }
+
+@media only screen and (max-width: 490px) {
+    .question {
+        font-size: 1.2rem;
+    }
+  }
+
+  @media only screen and (max-width: 460px) {
+    .name {
+        font-size: 1rem;
+    }
+  }
+
+  @media only screen and (max-width: 430px) {
+    .question {
+        font-size: 1rem;
+    }
+  }
+
+  @media only screen and (max-width: 370px) {
+    .question {
+        font-size: .9rem;
+    }
+  }
+
+.button1 {
+    margin-top: 20px;
+    border-style: none;
+    width: 320px;
+    height: 50px;
+    font-size: 1.4rem;
+    color: #FFF;
+    background: #740000;
+    background: -moz-linear-gradient(top, #910000 0%, #660000 50%,#440000 100%);
+    background: -webkit-linear-gradient(top, #910000 0%, #660000 50%,#440000 100%);
+    background: linear-gradient(to bottom, #910000 0%, #660000 50%,#440000 100%);
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #ff0000, 0 0 30px #ff0000, 0 0 40px #ff0000, 0 0 55px #ff0000, 0 0 75px #ff0000;
+    cursor: pointer;
+    border-radius: 10px;
+    border-bottom: 2px solid #270000; 
+    outline: 0;
+    box-shadow: 0px 2px 4px rgb(0, 24, 44);
+    animation: alertPulse 2s ease-out;
+    animation-iteration-count: infinite;
+    opacity: 1;
+}
+
+.button1:hover {
+    background: #740000;
+    animation: alertPulse 2s ease-out;
+    animation-iteration-count: infinite;
+    opacity: 1;
+}
+
+.button2 {
+    margin-top: 10px;
+    border-style: none;
+    width: 320px;
+    height: 50px;
+    font-size: 1.4rem;
+    color: #FFF;
+    background: #740000;
+    background: -moz-linear-gradient(top, #910000 0%, #660000 50%,#440000 100%);
+    background: -webkit-linear-gradient(top, #910000 0%, #660000 50%,#440000 100%);
+    background: linear-gradient(to bottom, #910000 0%, #660000 50%,#440000 100%);
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #ff0000, 0 0 30px #ff0000, 0 0 40px #ff0000, 0 0 55px #ff0000, 0 0 75px #ff0000;
+    cursor: pointer;
+    border-radius: 10px;
+    border-bottom: 2px solid #270000; 
+    outline: 0;
+    box-shadow: 0px 2px 4px rgb(0, 24, 44);
+}
+
+.button3 {
+    margin-top: 20px;
+    border-style: none;
+    width: 320px;
+    height: 50px;
+    font-size: 1.4rem;
+    background-color: rgb(151, 0, 0);
+    color: #FFF;
+    background: #740000;
+    background: -moz-linear-gradient(top, #910000 0%, #660000 50%,#290000 100%);
+    background: -webkit-linear-gradient(top, #910000 0%, #660000 50%,#290000 100%);
+    background: linear-gradient(to bottom, #910000 0%, #660000 50%,#290000 100%);
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #ff0000, 0 0 30px #ff0000, 0 0 40px #ff0000, 0 0 55px #ff0000, 0 0 75px #ff0000;
+    cursor: pointer;
+    border-radius: 10px;
+    border-bottom: 2px solid #270000; 
+    outline: 0;
+    box-shadow: 0px 2px 4px rgb(0, 24, 44);
+}
+
+ul > li {
+    list-style-type:none;
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: rgb(102, 0, 0);
+    height: 30px;
+    cursor: pointer;
+    display:block;
+}
+
+.name {
+    transition: all .3s ease-in-out;
+}
+
+.name:hover {
+    color: rgb(255, 230, 0);
+}
+
+.score {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    width: 300px;
+    height: 50px;
+    font-size: 1.4rem;
+    color:rgb(204, 236, 255);
+    text-shadow: 0px 4px 4px rgb(0, 25, 46);
+}
+
+.scoreFirstAttempt, .scoreSecondAttempt {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0px;
+    width: 300px;
+    height: 50px;
+    font-size: 1.4rem;
+    color: rgb(204, 236, 255);
+    text-shadow: 0px 2px 2px rgb(0, 25, 46);
+}
+
+
+ .count, .count2, .count3 {
+    margin-left: 20px;
+    font-size: 1.4rem;
+    color:rgb(204, 236, 255);
+    text-shadow: 0px 4px 4px rgb(0, 25, 46);
+ }
+
+ @media only screen and (max-width: 460px) {
+    .score, .scoreFirstAttempt, .scoreSecondAttempt {
+        font-size: 1.2rem;
+        height: 35px;
+    }
+  }
+
+  @media only screen and (max-width: 460px) {
+    .count, .count2, .count3 {
+        font-size: 1.2rem;
+    }
+  }
+
+.overlay {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top:0;
+    left:0;
+    right:0;
+    bottom: 0;
+    background-image: url(images/itl.cat_neuroscience-wallpaper_1688899.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: 5;
+}
+
+.test {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    font-family: "arial";
+    font-size: 1rem;
+    letter-spacing: 5px;
+    text-shadow: 0px 2px 2px rgb(0, 0, 0);
+}
+
+@media only screen and (max-width: 675px) {
+    .test {
+        font-size: 1rem;
+        word-spacing: 12px;
+        letter-spacing: 4px;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .test {
+        font-size: 0.4rem;
+        word-spacing: 12px;
+        letter-spacing: 4px;
+    }
+}
+
+.test2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    font-family: "times";
+    font-size: 3.2rem;
+    letter-spacing: 8px;
+    text-shadow: 0px 4px 4px rgb(0, 0, 0);
+}
+
+@media only screen and (max-width: 675px) {
+    .test2 {
+        font-size: 2.8rem;
+        word-spacing: 12px;
+        letter-spacing: 4px;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .test2 {
+        font-size: 1.8rem;
+        word-spacing: 12px;
+        letter-spacing: 4px;
+    }
+}       
+
+.start {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40rem;
+    height: 40rem;
+    border-radius: 50%;
+    font-size: 4rem;
+    background-color: transparent;
+    color:  rgb(210, 235, 255);
+    outline: none;
+    border: 1px solid rgb(76, 146, 184);
+    cursor: pointer;
+    box-shadow: 0px 4px 18px rgb(0, 0, 0);
+    word-spacing: 20px;
+    letter-spacing: 6px;
+    padding-left: 17px;
+
+}
+
+@media only screen and (max-width: 675px) {
+    .start {
+        width: 30rem;
+        height: 30rem;
+        font-size: 2.4rem;
+        word-spacing: 12px;
+        letter-spacing: 4px;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .start {
+        width: 20rem;
+        height: 20rem;
+        font-size: 1.6rem;
+        word-spacing: 12px;
+        letter-spacing: 4px;
+    }
+}
+
+.correct, .wrong {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 130px;
+    font-size: 1.8rem;
+    font-family:'Times New Roman', serif;
+    color: rgb(210, 235, 255);
+    text-shadow: 0px 4px 4px rgb(0, 25, 46);
+
+    animation: fadeIn .8s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@media only screen and (max-width: 575px) {
+    .correct{
+        height: 110px;
+    }
+  }
+
+  .wrong {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 130px;
+    font-size: 1.8rem;
+    font-family:'Times New Roman', serif;
+    color: rgb(210, 235, 255);
+    text-shadow: 0px 4px 4px rgb(0, 25, 46);
+}
+
+@media only screen and (max-width: 575px) {
+    .wrong {
+        height: 110px;
+    }
+  }
+
+.resetScores {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 12.05rem;
+    font-size: 2.4rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(221, 0, 0);
+    text-shadow: 0px 2px 2px rgb(0, 25, 46);
+}
+
+@media only screen and (max-width: 620px) {
+    .resetScores {
+        height: 11.6rem;
+    }
+  }
+
+  @media only screen and (max-width: 580px) {
+    .resetScores {
+        height: 11.7rem;
+    }
+  }
+
+  @media only screen and (max-width: 485px) {
+    .resetScores {
+        height: 10.1rem;
+    }
+  }
+
+  @media only screen and (max-width: 360px) {
+    .resetScores {
+        height: 9.8rem;
+    }
+  }
+
+  .resetScores.x::after {
+      content: "Wow, that's impressive!";
+      display: flex;
+      justify-items: center;
+      align-items: center;
+      position: absolute;
+      font-size: 2.8rem;
+      font-family:'Times New Roman', serif;
+      color: rgb(210, 235, 255);
+      text-shadow: 0px 4px 4px rgb(0, 25, 46);
+      transform: rotate(-40deg);
+      cursor: pointer;
+      z-index: 999;
+
+      animation: fadeIn .8s;
+      animation-fill-mode: forwards;
+  }
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+  @media only screen and (max-width: 620px) {
+    .resetScores.x::after {
+        font-size: 2.2rem;
+    }
+  }
+
+  @media only screen and (max-width: 435px) {
+    .resetScores.x::after {
+        font-size: 2.0rem;
+    }
+  }
+
+  @media only screen and (max-width: 372px) {
+    .resetScores.x::after {
+        font-size: 1.8rem;
+    }
+  }
+
+
+
+  
