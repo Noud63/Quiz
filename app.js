@@ -155,6 +155,7 @@ function resetGame() {
 
 document.querySelector('.start').addEventListener('click', start)
 function start() {
+            document.querySelector('.container').style.display = 'flex'
             document.querySelector('.overlay').style.display = 'none'
             document.querySelector('.count').textContent = score 
             gamePlaying = true
