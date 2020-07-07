@@ -10,7 +10,6 @@ class Question {
 displayAnswers(){
         let i = 0
         document.querySelector('.question').innerHTML = `<div class='q1' id=${this.num - 1}>${this.num}. ${this.question}</div>`;
-        console.log(document.querySelector('.q1'))
         let answers = this.answers
     for(let el of answers){
         let html = `<div class="name" id=${i}>${el}</div>`
