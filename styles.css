@@ -19,7 +19,7 @@ body {
 .container {
     max-width: 1000px;
     margin: 0px auto;
-    display: flex;
+    display: none;
     align-items: center;
     flex-direction: column;
     justify-content: center;
