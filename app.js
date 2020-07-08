@@ -60,7 +60,6 @@ function start() {
 }
 
 
-
 //Variables
 let runningQuestion;
 let gamePlaying;
