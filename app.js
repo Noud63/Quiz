@@ -52,7 +52,7 @@ function start() {
 }
 
 
-//GSAP animation, sliding head elements.
+//GSAP animation, sliding and rotating elements on page load.
 function gsapAnimation() {
 const timeline = gsap.timeline({defaults: {duration: .5, opacity: 0, rotation: 90}})
     timeline
