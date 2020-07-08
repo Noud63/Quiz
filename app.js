@@ -47,16 +47,21 @@ function start() {
             setTimeout( ()=> {
                 document.querySelector('.header2').style.display = 'none'
             }, 6000)
+            
+            gsapAnimation()
+}
 
-           //GSAP animation, sliding and rotating elements.
-           const timeline = gsap.timeline({defaults: {duration: .5, opacity: 0, rotation: 90}})
-           timeline
-                .from('.Q',  {  x: -500})
-                .from('.U',  {  x:  500})
-                .from('.I',  {  x: -500})
-                .from('.Z',  {  x:  500})
 
-            gsap.from('.header2',  {duration: 2, y: '-100vh'});
+//GSAP animation, sliding head elements.
+function gsapAnimation() {
+const timeline = gsap.timeline({defaults: {duration: .5, opacity: 0, rotation: 90}})
+    timeline
+         .from('.Q',  {  x: -500})
+         .from('.U',  {  x:  500})
+         .from('.I',  {  x: -500})
+         .from('.Z',  {  x:  500})
+
+     gsap.from('.header2',  {duration: 2, y: '-100vh'});
 }
 
 
@@ -205,3 +210,43 @@ function removeOverlay(e){
     }
 }
 
+/*
+/////// Alternative solution //////////////////////////////////////////////
+
+document.querySelector('.button1').addEventListener('click', nextQuestion)
+function nextQuestion(e) {
+    if(gamePlaying === true && runningQuestion <= questions.length - 1){
+        clearAnswers()
+        document.querySelector('.button1').textContent = 'Next Question'
+        runningQuestion++
+        questions[runningQuestion].displayAnswers()
+    }
+    if(runningQuestion >= questions.length - 1){
+        document.querySelector('.button1').textContent = 'Try again!'
+        runningQuestion = - 1
+    }
+}
+
+////// Stackoverflow help //////////////////////////////////////////////////
+
+const btn1 = document.querySelector('.button1')
+
+btn1.addEventListener("click", onButtonClick);
+
+function isLastQuestion() { return runningQuestion >= questions.length - 1; }
+
+function onButtonClick() {
+  if (gamePlaying === true && !isLastQuestion()) {
+    runningQuestion++;
+    displayQuestion();
+  } else {
+    resetGame();
+  }
+}
+
+function displayQuestion() {
+    clearAnswers();
+    btn1.textContent = isLastQuestion() ? 'Try again' : 'Next Question';
+    questions[runningQuestion].displayAnswers();
+}
+*/
