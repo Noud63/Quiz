@@ -50,6 +50,12 @@ function start() {
             }, 5000)
 }
 
+window.onload = function(){
+    gsap.from('.Q',  {duration: 2, x: -500, delay: 1, rotation: 360, opacity: 0});
+    gsap.from('.I',  {duration: 4, x: -500, delay: 1, rotation: 360, opacity: 0});
+    gsap.from('.U',  {duration: 3, x:  500, delay: 1, rotation: 360, opacity: 0});
+    gsap.from('.Z',  {duration: 5, x:  500, delay: 1, rotation: 360, opacity: 0});
+}
 
 let runningQuestion;
 let gamePlaying;
