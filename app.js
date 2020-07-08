@@ -7,10 +7,9 @@ class Question {
         this.num = num
     }
 
-displayAnswers(){
+displayQandA(){
         let i = 0
         document.querySelector('.question').innerHTML = `<div class='q1' id=${this.num - 1}>${this.num}. ${this.question}</div>`;
-        console.log(document.querySelector('.q1'))
         let answers = this.answers
     for(let el of answers){
         let html = `<div class="name" id=${i}>${el}</div>`
@@ -42,21 +41,27 @@ function start() {
             document.querySelector('.count').textContent = score 
             gamePlaying = true
             runningQuestion = 0;
-            questions[runningQuestion].displayAnswers()
+            questions[runningQuestion].displayQandA()
 
             document.querySelector('.header2').style.display = 'flex'
             setTimeout( ()=> {
                 document.querySelector('.header2').style.display = 'none'
-            }, 5000)
+            }, 6000)
+
+           //GSAP animation, sliding head elements.
+           const timeline = gsap.timeline({defaults: {duration: .5, opacity: 0, rotation: 90}})
+           timeline
+                .from('.Q',  {  x: -500})
+                .from('.U',  {  x:  500})
+                .from('.I',  {  x: -500})
+                .from('.Z',  {  x:  500})
+
+            gsap.from('.header2',  {duration: 2, y: '-100vh'});
 }
 
-window.onload = function(){
-    gsap.from('.Q',  {duration: 2, x: -500, delay: 1, rotation: 360, opacity: 0});
-    gsap.from('.I',  {duration: 4, x: -500, delay: 1, rotation: 360, opacity: 0});
-    gsap.from('.U',  {duration: 3, x:  500, delay: 1, rotation: 360, opacity: 0});
-    gsap.from('.Z',  {duration: 5, x:  500, delay: 1, rotation: 360, opacity: 0});
-}
 
+
+//Variables
 let runningQuestion;
 let gamePlaying;
 let score = 0
@@ -64,8 +69,8 @@ let score1;
 let score2;
 
 
+//Next question, last question and try again button
 const btn1 = document.querySelector('.button1');
-
 btn1.addEventListener("click", onButtonClick);
 function onButtonClick() {
 
@@ -75,7 +80,7 @@ function onButtonClick() {
 
         if (gamePlaying === true && runningQuestion < questions.length - 1) {
             runningQuestion++;
-            displayQuestion();
+            displayQuestionAndAnswers();
         } 
         else{
             renderScores()
@@ -84,9 +89,10 @@ function onButtonClick() {
 }
 
 
-function displayQuestion() {
+//Displays the question and the answers
+function displayQuestionAndAnswers() {
             clearAnswers();
-            questions[runningQuestion].displayAnswers();
+            questions[runningQuestion].displayQandA();
 
             if(runningQuestion === questions.length - 1){
                 btn1.textContent = 'Last Question!';
@@ -94,21 +100,22 @@ function displayQuestion() {
 }    
 
 
+//Click right answer and update score
 document.querySelector('.answers').addEventListener('click', possibleAnswers)
 function possibleAnswers(e){
      if(e.target && e.target.matches(".name")){
-         let item = e.target.id
-         let id = parseInt(item)
-         questions[runningQuestion].displayCorrectOrWrongALert(id) 
+          let item = e.target.id
+          let id = parseInt(item)
+          questions[runningQuestion].displayCorrectOrWrongALert(id) 
     }
-         document.querySelector('.count').textContent = score + ' / ' + questions.length
+          document.querySelector('.count').textContent = score + ' / ' + questions.length
     
      if(runningQuestion >= questions.length - 1){
             btn1.textContent = 'Try Again?';
         }
 }
 
-
+//Display score first attempt and second attempt
 function renderScores() {
     if(document.querySelector('.count2').textContent === '0'){
            score1 = score 
@@ -122,7 +129,7 @@ function renderScores() {
    
 }
 
-
+//Overlay Resety Scores, resets whole game to initial state
 function showResetScoresAlert(){
             
      if(document.querySelector('.count2').textContent !== '0' && document.querySelector('.count3').textContent !== '0'){
@@ -173,17 +180,19 @@ function resetGame() {
             clearAnswers()
 
             runningQuestion = 0
-            questions[runningQuestion].displayAnswers()
+            questions[runningQuestion].displayQandA()
 }
 
+
 function highScore() {
-    if(score1 >= '1' && score2 >= '2'){
+    if(score1 >= '15' && score2 >= '20'){
         clearAnswers()
         document.querySelector('.wrong').style.display = 'none';
         document.querySelector('.correct').style.display = 'none';
         addOverlay()
     }
 }
+
 
 function addOverlay(){
         document.querySelector('.resetScores').classList.add('x')
@@ -195,15 +204,7 @@ function removeOverlay(e){
     if(e.target.matches('.x')){
         document.querySelector('.resetScores').classList.remove('x')
     }
-    
 }
-
-gsap.from('.Q',  {duration: 2, x: -500});
-gsap.from('.I',  {duration: 4, x: -500});
-gsap.from('.U',  {duration: 3, x: 500});
-gsap.from('.Z',  {duration: 5, x: 500});
-
-
 
 /*
 /////// Alternative solution //////////////////////////////////////////////

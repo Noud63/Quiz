@@ -16,6 +16,7 @@ body {
     -o-background-size: cover;
     background-size: cover;
 }
+
 .container {
     max-width: 1000px;
     margin: 0px auto;
@@ -196,7 +197,7 @@ body {
     background: #740000;
     background: -moz-linear-gradient(top, #910000 0%, #660000 50%,#440000 100%);
     background: -webkit-linear-gradient(top, #910000 0%, #660000 50%,#440000 100%);
-    background: linear-gradient(to bottom, #910000 0%, #660000 50%,#440000 100%);
+    background: linear-gradient(to bottom, #ff9100 0%, #8d3f00 50%,#3d1600 100%);
     text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #ff0000, 0 0 30px #ff0000, 0 0 40px #ff0000, 0 0 55px #ff0000, 0 0 75px #ff0000;
     cursor: pointer;
     border-radius: 10px;
@@ -218,7 +219,7 @@ body {
     background: #740000;
     background: -moz-linear-gradient(top, #910000 0%, #660000 50%,#440000 100%);
     background: -webkit-linear-gradient(top, #910000 0%, #660000 50%,#440000 100%);
-    background: linear-gradient(to bottom, #910000 0%, #660000 50%,#440000 100%);
+    background: linear-gradient(to bottom, #ff9100 0%, #8d3f00 50%,#3d1600 100%);
     text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #ff0000, 0 0 30px #ff0000, 0 0 40px #ff0000, 0 0 55px #ff0000, 0 0 75px #ff0000;
     cursor: pointer;
     border-radius: 10px;
@@ -238,7 +239,7 @@ body {
     background: #740000;
     background: -moz-linear-gradient(top, #910000 0%, #660000 50%,#290000 100%);
     background: -webkit-linear-gradient(top, #910000 0%, #660000 50%,#290000 100%);
-    background: linear-gradient(to bottom, #910000 0%, #660000 50%,#290000 100%);
+    background: linear-gradient(to bottom, #ff9100 0%, #8d3f00 50%,#3d1600 100%);
     text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #ff0000, 0 0 30px #ff0000, 0 0 40px #ff0000, 0 0 55px #ff0000, 0 0 75px #ff0000;
     cursor: pointer;
     border-radius: 10px;
@@ -431,6 +432,14 @@ ul > li {
     .resetScores.x::after {
         font-size: 1.8rem;
     }
+  }
+
+  .copyRight {
+   padding: 20px;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: small;
+   color: rgb(119, 175, 196);
+
   }
 
 /* Start page */
