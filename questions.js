@@ -27,7 +27,7 @@ const q25 = new Question('How many stomachs does a cow have?', 25, ['A: 3', 'B: 
 const q26 = new Question('What gives red blood cells their colour?', 26, ['A: Haemoglobin', 'B: Blood plasma', 'C: Blood platelet'], 0);
 const q27 = new Question('In which city in 1916 was the Easter Rising?', 27, ['A: Belfast', 'B: Dublin', 'C: York'], 1);
 const q28 = new Question('What does H stand for on the periodic table?', 28, ["A: Helium", 'B: Hydrogen', 'C: Hassium'], 1);
-const q29 = new Question('How many teeth does an adult human have?', 29, ['A: 30', 'B: 34', 'C: 32'], 1);
+const q29 = new Question('How many teeth does an adult human have?', 29, ['A: 30', 'B: 34', 'C: 32'], 2);
 const q30 = new Question('How many edges in a cube?', 30, ['A: 12', 'B: 10', 'C: 16'], 0);
 
 
