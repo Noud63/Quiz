@@ -10,6 +10,7 @@ class Question {
 displayAnswers(){
         let i = 0
         document.querySelector('.question').innerHTML = `<div class='q1' id=${this.num - 1}>${this.num}. ${this.question}</div>`;
+        console.log(document.querySelector('.q1'))
         let answers = this.answers
     for(let el of answers){
         let html = `<div class="name" id=${i}>${el}</div>`
@@ -48,6 +49,7 @@ function start() {
                 document.querySelector('.header2').style.display = 'none'
             }, 5000)
 }
+
 
 let runningQuestion;
 let gamePlaying;
@@ -195,3 +197,45 @@ gsap.from('.I',  {duration: 4, x: -500});
 gsap.from('.U',  {duration: 3, x: 500});
 gsap.from('.Z',  {duration: 5, x: 500});
 
+
+
+/*
+/////// Alternative solution //////////////////////////////////////////////
+
+document.querySelector('.button1').addEventListener('click', nextQuestion)
+function nextQuestion(e) {
+    if(gamePlaying === true && runningQuestion <= questions.length - 1){
+        clearAnswers()
+        document.querySelector('.button1').textContent = 'Next Question'
+        runningQuestion++
+        questions[runningQuestion].displayAnswers()
+    }
+    if(runningQuestion >= questions.length - 1){
+        document.querySelector('.button1').textContent = 'Try again!'
+        runningQuestion = - 1
+    }
+}
+
+////// Stackoverflow help //////////////////////////////////////////////////
+
+const btn1 = document.querySelector('.button1')
+
+btn1.addEventListener("click", onButtonClick);
+
+function isLastQuestion() { return runningQuestion >= questions.length - 1; }
+
+function onButtonClick() {
+  if (gamePlaying === true && !isLastQuestion()) {
+    runningQuestion++;
+    displayQuestion();
+  } else {
+    resetGame();
+  }
+}
+
+function displayQuestion() {
+    clearAnswers();
+    btn1.textContent = isLastQuestion() ? 'Try again' : 'Next Question';
+    questions[runningQuestion].displayAnswers();
+}
+*/
