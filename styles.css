@@ -3,6 +3,10 @@
     font: 62.5%
 }
 
+html {
+    height: 100%;
+}
+
 /* Game interface */
 body {
     margin: 0;
@@ -19,7 +23,7 @@ body {
 
 .container {
     max-width: 1000px;
-    margin: 0px auto;
+    margin: 10px auto;
     display: none;
     align-items: center;
     flex-direction: column;
@@ -54,7 +58,7 @@ body {
     top: 45%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -45%);
     border: 2px solid red;
     border-radius: 10px;
     text-shadow: 0px 1px 1px rgb(0, 30, 48);
@@ -239,7 +243,7 @@ body {
     background: #740000;
     background: -moz-linear-gradient(top, #910000 0%, #660000 50%,#290000 100%);
     background: -webkit-linear-gradient(top, #910000 0%, #660000 50%,#290000 100%);
-    background: linear-gradient(to bottom, #ff9100 0%, #8d3f00 50%,#3d1600 100%);
+    background: linear-gradient(to bottom, #ff9100 0%, #8d3f00 50%,#311200 100%);
     text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #ff0000, 0 0 30px #ff0000, 0 0 40px #ff0000, 0 0 55px #ff0000, 0 0 75px #ff0000;
     cursor: pointer;
     border-radius: 10px;

@@ -54,7 +54,12 @@ function start() {
             questions[runningQuestion].displayQandA()
             
             document.querySelector('.header2').style.display = 'flex'
+
             gsapAnimation()
+            
+            setTimeout( ()=> {
+                document.querySelector('.header2').style.display = 'none'
+            }, 10000)
             
 }
 
@@ -62,6 +67,14 @@ function start() {
 //GSAP animation, sliding and rotating elements.
 
 function gsapAnimation() {
+    /*
+const timeline = gsap.timeline({defaults: {duration: .5, opacity: 0, rotation: 90}})
+    timeline
+         .from('.Q',  {  x: -500})
+         .from('.U',  {  x:  500})
+         .from('.I',  {  x: -500})
+         .from('.Z',  {  x:  500})
+    */
      gsap.from('.header2',  {duration: 2, y: '-100vh'});
      gsap.to('.header2', {duration: 2, delay: 5, autoAlpha: 1, autoAlpha: 0})
      
