@@ -9,7 +9,7 @@ class Question {
 
 displayQandA(){
         let i = 0
-        document.querySelector('.question').innerHTML = `<div class='q1' id=${this.num - 1}>${this.num}. ${this.question}</div>`;
+        document.querySelector('.question').innerHTML = `<div class='q1' id=${this.num}>${this.num}. ${this.question}</div>`;
         let answers = this.answers
     for(let el of answers){
         let html = `<div class="name" id=${i}>${el}</div>`
@@ -44,35 +44,26 @@ let score2;
 
 document.querySelector('.start').addEventListener('click', start)
 function start() {
-            document.querySelector('.container').style.display = 'flex'
+    
             document.querySelector('.overlay').style.display = 'none'
+            document.querySelector('.container').style.display = 'flex'
             document.querySelector('.count').textContent = score 
+            
             gamePlaying = true
             runningQuestion = 0;
             questions[runningQuestion].displayQandA()
-
+            
             document.querySelector('.header2').style.display = 'flex'
-            
-            
-            setTimeout( ()=> {
-                document.querySelector('.header2').style.display = 'none'
-            }, 10000)
-            
             gsapAnimation()
+            
 }
 
 
 //GSAP animation, sliding and rotating elements.
-function gsapAnimation() {
-const timeline = gsap.timeline({defaults: {duration: .5, opacity: 0, rotation: 90}})
-    timeline
-         .from('.Q',  {  x: -500})
-         .from('.U',  {  x:  500})
-         .from('.I',  {  x: -500})
-         .from('.Z',  {  x:  500})
 
-     gsap.from('.header2',  {duration: 4, y: '-100vh', delay: 1});
-     gsap.to('.header2', {duration: 4, delay: 6, autoAlpha: 1, autoAlpha: 0})
+function gsapAnimation() {
+     gsap.from('.header2',  {duration: 2, y: '-100vh'});
+     gsap.to('.header2', {duration: 2, delay: 5, autoAlpha: 1, autoAlpha: 0})
      
 }
 
@@ -215,3 +206,45 @@ function removeOverlay(e){
     }
 }
 
+
+
+/*
+/////// Alternative solution //////////////////////////////////////////////
+
+document.querySelector('.button1').addEventListener('click', nextQuestion)
+function nextQuestion(e) {
+    if(gamePlaying === true && runningQuestion <= questions.length - 1){
+        clearAnswers()
+        document.querySelector('.button1').textContent = 'Next Question'
+        runningQuestion++
+        questions[runningQuestion].displayAnswers()
+    }
+    if(runningQuestion >= questions.length - 1){
+        document.querySelector('.button1').textContent = 'Try again!'
+        runningQuestion = - 1
+    }
+}
+
+////// Stackoverflow help //////////////////////////////////////////////////
+
+const btn1 = document.querySelector('.button1')
+
+btn1.addEventListener("click", onButtonClick);
+
+function isLastQuestion() { return runningQuestion >= questions.length - 1; }
+
+function onButtonClick() {
+  if (gamePlaying === true && !isLastQuestion()) {
+    runningQuestion++;
+    displayQuestion();
+  } else {
+    resetGame();
+  }
+}
+
+function displayQuestion() {
+    clearAnswers();
+    btn1.textContent = isLastQuestion() ? 'Try again' : 'Next Question';
+    questions[runningQuestion].displayAnswers();
+}
+*/
