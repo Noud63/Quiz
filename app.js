@@ -52,12 +52,12 @@ function start() {
             questions[runningQuestion].displayQandA()
 
             document.querySelector('.header2').style.display = 'flex'
-            /*
-            Replaced by gsap animation
+            
+            
             setTimeout( ()=> {
                 document.querySelector('.header2').style.display = 'none'
             }, 10000)
-            */
+            
             gsapAnimation()
 }
 
