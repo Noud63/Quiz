@@ -493,19 +493,28 @@ ul > li {
 
 @media only screen and (max-width: 675px) {
     .test {
-        font-size: .8rem;
+        font-size: 1rem;
         word-spacing: 12px;
         letter-spacing: 4px;
     }
 }
 
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 520px) {
     .test {
         font-size: 0.4rem;
         word-spacing: 12px;
         letter-spacing: 4px;
     }
 }
+
+@media only screen and (max-width: 700px) and (orientation: landscape){
+    .test{
+        font-size: 6px;
+        word-spacing: 12px;
+        letter-spacing: 4px;
+    }
+}
+
 
 .test2 {
     display: flex;
@@ -519,7 +528,7 @@ ul > li {
     text-shadow: 0px 4px 4px rgb(0, 0, 0);
 }
 
-@media only screen and (max-width: 675px) and ( min-width: 539px) {
+@media only screen and (max-width: 675px) {
     .test2 {
         font-size: 2.8rem;
         word-spacing: 12px;
@@ -527,13 +536,22 @@ ul > li {
     }
 }
 
-@media only screen and (max-width: 540px) and ( min-width: 320px) {
+@media only screen and (max-width: 520px) {
     .test2 {
         font-size: 1.8rem;
         word-spacing: 12px;
         letter-spacing: 4px;
     }
-} 
+}  
+
+@media only screen and (max-width: 700px) and (orientation: landscape){
+    .test2{
+        
+        font-size: 1.5rem;
+        word-spacing: 12px;
+        letter-spacing: 4px;
+    }
+}
 
 
 .start {
@@ -557,7 +575,7 @@ ul > li {
 
 }
 
-@media only screen and (max-width: 700px) and (min-width: 541px) {
+@media only screen and (max-width: 675px) {
     .start {
         width: 30rem;
         height: 30rem;
@@ -567,7 +585,7 @@ ul > li {
     }
 }
 
-@media only screen and (max-width: 540px) and (min-width: 320px) {
+@media only screen and (max-width: 520px) {
     .start {
         width: 20rem;
         height: 20rem;
@@ -577,4 +595,14 @@ ul > li {
     }
 }
 
+@media only screen and (max-width: 700px) and (orientation: landscape){
+    .start {
+        width: 18rem;
+        height: 18rem;
+        font-size: 1.6rem;
+        word-spacing: 12px;
+        letter-spacing: 4px;
+    }
+}
 
+  
