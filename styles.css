@@ -509,7 +509,7 @@ ul > li {
 
 @media only screen and (max-width: 700px) and (orientation: landscape){
     .test{
-        font-size: 6px;
+        font-size: .1rem;
         word-spacing: 12px;
         letter-spacing: 4px;
     }
@@ -547,7 +547,7 @@ ul > li {
 @media only screen and (max-width: 700px) and (orientation: landscape){
     .test2{
         
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         word-spacing: 12px;
         letter-spacing: 4px;
     }
@@ -597,8 +597,8 @@ ul > li {
 
 @media only screen and (max-width: 700px) and (orientation: landscape){
     .start {
-        width: 18rem;
-        height: 18rem;
+        width: 16rem;
+        height: 16rem;
         font-size: 1.6rem;
         word-spacing: 12px;
         letter-spacing: 4px;
