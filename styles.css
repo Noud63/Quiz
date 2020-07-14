@@ -15,6 +15,8 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .container {
