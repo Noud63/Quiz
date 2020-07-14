@@ -17,13 +17,6 @@ body {
     background-size: cover;
 }
 
-@media only screen and (max-height: 640px) {
-    body {
-        background-image: url(images/wallpaper640.jpg);
-    }
-  }
-
-
 .container {
     max-width: 1000px;
     margin: 10px auto;
