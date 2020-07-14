@@ -23,7 +23,7 @@ body {
 
 .container {
     max-width: 1000px;
-    margin: 10px auto;
+    margin: 0 auto;
     display: none;
     align-items: center;
     flex-direction: column;
@@ -40,7 +40,7 @@ body {
     align-items: center;
     flex-direction: column;
     width: 100%;
-    font-size: 6.8rem;
+    font-size: 6.4rem;
     font-family: 'Playfair Display', serif;
     color: rgb(188, 230, 255);
     border-bottom: 1px solid rgb(224, 244, 255);
@@ -101,10 +101,6 @@ body {
     padding: 5px;
 }
 
-.IZ {
-    margin-bottom: 20px;
-}
-
 .I {
     width: 160px;
     display: flex;
@@ -125,7 +121,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 20px;
     color: rgb(102, 0, 0);
     font-size: 1.8rem;
     font-family: 'Playfair Display', serif;
@@ -145,7 +141,7 @@ body {
     display: flex;
     flex-direction: column;
     margin-top: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     height: 100px;
 }
 
@@ -509,7 +505,7 @@ ul > li {
     }
 }
 
-@media only screen and (max-width: 740px) and (orientation: landscape){
+@media only screen and (max-width: 800px) and (orientation: landscape){
     .test{
         font-size: .1rem;
         word-spacing: 12px;
@@ -546,7 +542,7 @@ ul > li {
     }
 }  
 
-@media only screen and (max-width: 740px) and (orientation: landscape){
+@media only screen and (max-width: 800px) and (orientation: landscape){
     .test2{
         
         font-size: 1.2rem;
@@ -597,7 +593,7 @@ ul > li {
     }
 }
 
-@media only screen and (max-width: 740px) and (orientation: landscape){
+@media only screen and (max-width: 800px) and (orientation: landscape){
     .start {
         width: 16rem;
         height: 16rem;
