@@ -93,6 +93,9 @@ function onButtonClick() {
         if (gamePlaying === true && runningQuestion < questions.length - 1) {
             runningQuestion++;
             displayQuestionAndAnswers();
+        }
+        else if(btn1.textContent === 'Last Question!') {
+            btn1.textContent = 'Try Again?'
         } 
         else{
             renderScores()
@@ -108,6 +111,7 @@ function displayQuestionAndAnswers() {
             if(runningQuestion === questions.length - 1){
                 btn1.textContent = 'Last Question!';
             }
+    
 }    
 
 
