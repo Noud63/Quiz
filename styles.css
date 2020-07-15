@@ -293,12 +293,6 @@ body {
 }
 
 
-@media only screen and (max-width: 575px) {
-    .answers {
-        margin-bottom: 0px;
-    }
-  }
-
 .name {
     margin-top: 10px;
     cursor: pointer;
@@ -493,7 +487,7 @@ ul > li {
 
 @media only screen and (max-width: 575px) {
     .correct{
-        height: 110px;
+        height: 130px;
     }
   }
 
@@ -510,7 +504,7 @@ ul > li {
 
 @media only screen and (max-width: 575px) {
     .wrong {
-        height: 110px;
+        height: 130px;
     }
   }
 
