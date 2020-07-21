@@ -6,7 +6,7 @@ Screenshots desktop (1080 x 1920)<br>
 
 ![quiz4, noud van dun](https://user-images.githubusercontent.com/38325801/86583689-fcbbab80-bf83-11ea-8840-80795550fba9.png)
 
-![quiz](https://user-images.githubusercontent.com/38325801/86813534-94062900-c080-11ea-89a7-d28c6ab8884c.png)
+![quiz7](https://user-images.githubusercontent.com/38325801/88065897-74d1c600-cb6d-11ea-98c6-5a52f649a1ef.png)
 
 ![quiz2](https://user-images.githubusercontent.com/38325801/86583962-7489d600-bf84-11ea-80e1-a8d3cac45473.png)
 
