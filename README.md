@@ -8,7 +8,7 @@ Screenshots desktop (1080 x 1920)<br>
 
 ![quiz7](https://user-images.githubusercontent.com/38325801/88065897-74d1c600-cb6d-11ea-98c6-5a52f649a1ef.png)
 
-![quiz2](https://user-images.githubusercontent.com/38325801/86583962-7489d600-bf84-11ea-80e1-a8d3cac45473.png)
+![quiz6](https://user-images.githubusercontent.com/38325801/88066108-ae0a3600-cb6d-11ea-9119-24706010dfb5.png)
 
 ![quiz3](https://user-images.githubusercontent.com/38325801/86584041-98e5b280-bf84-11ea-8176-d76f3589b4ff.png)
 
