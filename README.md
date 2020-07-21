@@ -10,7 +10,7 @@ Screenshots desktop (1080 x 1920)<br>
 
 ![quiz6](https://user-images.githubusercontent.com/38325801/88066108-ae0a3600-cb6d-11ea-9119-24706010dfb5.png)
 
-![quiz3](https://user-images.githubusercontent.com/38325801/86584041-98e5b280-bf84-11ea-8176-d76f3589b4ff.png)
+![quiz8](https://user-images.githubusercontent.com/38325801/88066363-f590c200-cb6d-11ea-91a9-28464683a34d.png)
 
 Screenshot mobile (360 x 720)<br>
 
