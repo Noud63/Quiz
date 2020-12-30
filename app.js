@@ -9,7 +9,7 @@ class Question {
 
 displayQandA(){
         let i = 0
-        document.querySelector('.question').innerHTML = `<div class='q1' id=${this.num}>${this.num}. ${this.question}</div>`;
+        document.querySelector('.question').innerHTML = `<div class='q1' id=${this.num}> ${this.num}. ${this.question} </div>`;
         let answers = this.answers
     for(let el of answers){
         let html = `<div class="name" id=${i}>${el}</div>`
