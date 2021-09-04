@@ -150,22 +150,16 @@
     }
 }
 
-
-
 /* Game interface */
 body {
     margin: 0;
     padding: 0;
     background-image: url(images/wallpaper.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    overflow-y: auto;
-    overflow-x: hidden;
+    height: 100vh;
+  width: 100%;
+  margin: 0;
+  background-size:cover;
+ background-position: center center;
 }
 
 .container {
